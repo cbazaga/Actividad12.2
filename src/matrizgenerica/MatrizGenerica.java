@@ -16,13 +16,13 @@ import java.lang.Math;
 public abstract class MatrizGenerica<E extends Number> {
 
     // Matrices implicadas en la última operación realizada
-    private E[][] matrizOpIzquierdo;
-    private E[][] matrizOpDerecho;
+    protected E[][] matrizOpIzquierdo;
+    protected E[][] matrizOpDerecho;
 
-    private TipoOperacion tipoUltimaOperacion;
+    protected TipoOperacion tipoUltimaOperacion;
 
     // Matriz resultado
-    private E[][] matriz;
+    protected E[][] matriz;
 
     public MatrizGenerica(int tamaño) {
         Random random = new Random();
